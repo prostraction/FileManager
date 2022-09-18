@@ -10,7 +10,6 @@ void MainWindow::TableShowDir(const std::filesystem::path &entry) {
         table->clean();
         ShowDirs(entry, false);
         for (int i = 0; i < table->rowCount(); i++) {
-            fprintf(stderr, "%d\n", table->rowCount());
             table_view->setRowHeight(i, 24);
         }
     }
